@@ -1,0 +1,225 @@
+:root {
+	--rojo: #E50914;
+	/*--fondo: #01b601;*/
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	/*background: var(--fondo);*/
+	font-family: 'Open Sans', sans-serif;
+	
+}
+
+#background{
+    background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,0) 100%), url(../img/dahmer-monstruo-la-historia-de-jeffrey-dahmer-neflix.jpeg);
+    background-size:cover;
+}
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	padding: 15px 0;
+	height: 10vh;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+ header .logo img {
+	height: 90px;
+	
+}
+	
+#navbar {
+	text-transform: uppercase;
+}
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}
+
+/* ---- ----- ----- Pelicula Principal ----- ----- ----- */
+.pelicula-principal {
+	height: 90vh;
+	color: #fff;
+	box-sizing: border-box;
+	display: flex;
+  
+	
+}
+
+.pelicula-principal .contenedor {
+	box-sizing: border-box;
+	
+    padding-left: 20px;
+	width: 100%
+}
+.dahmer {
+    box-sizing: border-box;
+    margin-top: 130px;
+    width: 400px;
+    
+    padding-left: 30px;
+}
+
+.text {
+    box-sizing: border-box;
+    width: 600px;
+    
+    padding-left: 30px;
+}
+
+.botones{
+    padding-left: 30px;
+    padding-top: 10px;
+}
+.pelicula-principal .dahmer img {
+    width: 350px;
+}
+
+
+
+.pelicula-principal .titulo {
+    padding-top: 50px;
+	font-weight: 200;
+	font-size: 1.5em;
+	margin-bottom: 0.4em;
+	
+	line-height: 1.2em;
+}
+
+.pelicula-principal .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.7em;
+	max-width: 100%;
+	margin-bottom: 1.25em;
+	
+}
+
+.pelicula-principal .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.pelicula-principal .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.pelicula-principal .boton i {
+	margin-right: 1.25em;
+}
+
+
+#temporadauno {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(29, 27, 27);
+   padding-top: 100px;
+}
+
+#temporadauno .container {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    padding-top: 30px;
+   flex-wrap: wrap;
+}
+
+.primer,.segundo,.tercer,.cuarto,.quinto,.sexto,.septimo,.octavo,.noveno,.decimo {
+    flex: 1;
+    color: #FFF;
+    padding: 0 20px;
+    text-align: center;
+    width: 30%;
+    font-size: 15px;
+    
+}
+
+ 
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 1000px) {
+	#navbar {
+		padding-right: 160px;
+	}
+
+	#temporadauno .container {
+		flex-direction: column;
+	}
+	.primer,.segundo,.tercer,.cuarto,.quinto,.sexto,.septimo,.octavo,.noveno,.decimo {
+		
+		
+		padding: 0 20px;
+		text-align: center;
+		
+		font-size: 10px;
+}
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.pelicula-principal {
+		font-size: 14px;
+	}
+
+	.pelicula-principal .descripcion {
+		max-width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 620px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 25px;
+	}
+
+	#temporadauno .container {
+		flex-direction: column;
+	}
+	#temporadauno .container h2 {
+		display: none;
+	}
+}
